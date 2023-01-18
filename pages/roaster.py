@@ -3,12 +3,13 @@ from src.data import get_data
 
 
 def main():
-    st.title("Roast Page")
+    st.title("Roaster Page")
 
     coffee_reviews = get_data()
-    roast_selection = st.selectbox("Select roast:", options=coffee_reviews["roast"].unique())
 
-    st.write(roast_selection)
+    roaster_selection = st.selectbox("Select roaster:", options=coffee_reviews["roaster"].unique())
+
+    st.write(roaster_selection)
     st.dataframe(coffee_reviews)
 
 
