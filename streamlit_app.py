@@ -4,7 +4,6 @@ from src.data import get_data
 
 def main():
     st.set_page_config(page_title="Coffee Reviews",
-                       page_icon="⭐",
                        layout="wide")
 
     st.title("Coffee Reviews | Streamlit | Kaggle")
